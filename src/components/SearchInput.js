@@ -75,3 +75,7 @@ export default function SearchInput() {
         </div>
     );
 }
+
+// Main criterias for good react components is that it should be reusable
+// At the moment the structure looks like App -> Home -> Search input
+// We need to restructure our code and create separate components.

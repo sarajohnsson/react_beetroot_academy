@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css';
-import Home from './components/Home';
+// import Home from './components/Home';
+import TipsCalculator from './components/TipsCalculator';
 
 function App() {
     return (
@@ -9,7 +10,8 @@ function App() {
         // Tags are the same except for class in JSX is className
         // If you have picture in local file you need to import each and everyone of them as you are not able to put them directly in the HTML like code
         <div className="App">
-            <Home />
+            {/* <Home /> */}
+            <TipsCalculator />
         </div>
     );
 }
