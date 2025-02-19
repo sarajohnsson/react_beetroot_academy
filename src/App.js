@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.scss';
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 // import Home from './components/Home';
 import TipsCalculator from './components/TipsCalculator';
 
