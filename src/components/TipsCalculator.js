@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styling/TipsCalculator.scss';
 import Input from './Input';
 import Button from './Button';
-import Background from '../images/bg-image2.jpg';
+import Background from '../images/bg-image2.webp';
 
 export default function TipsCalculator() {
     const [billAmount, setBillAmount] = useState('');
@@ -65,7 +65,7 @@ export default function TipsCalculator() {
                         <Button
                             className="btn"
                             onClick={() => calculateTips(10)}
-                            title="Bad"
+                            title="Poor"
                         />
                         <Button
                             className="btn"

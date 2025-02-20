@@ -188,3 +188,14 @@ body {
         background-color: rgba($bg-color-light, 1);
     }
 }
+
+@media all and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
