@@ -1,0 +1,82 @@
+$main: rgb(86, 172, 185);
+$dark: rgb(4, 132, 179);
+$accent: rgb(76, 209, 200);
+$light: rgb(236, 227, 219);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-top: 60px;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    .item-card {
+        background-color: $main;
+        border-radius: 25px;
+        padding: 20px 40px;
+
+        .card-image {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 25px;
+            box-shadow: 0 8px 16px rgba($color: #000000, $alpha: 0.25);
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-size: 2rem;
+            color: $light;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: $dark;
+            margin-bottom: 15px;
+        }
+
+        .text {
+            font-size: 1.25rem;
+            color: $light;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: $accent;
+            border: none;
+            text-transform: uppercase;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: $dark;
+                color: $light;
+            }
+        }
+    }
+}

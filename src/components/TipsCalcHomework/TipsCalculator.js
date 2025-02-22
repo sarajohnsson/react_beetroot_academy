@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styling/TipsCalculator.scss';
 import Input from './Input';
 import Button from './Button';
-import Background from '../images/bg-image2.webp';
+import Background from '../images/bg-image2.jpg';
 
 export default function TipsCalculator() {
     const [billAmount, setBillAmount] = useState('');
