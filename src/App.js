@@ -16,7 +16,7 @@ function App() {
             {/* <MovieDatabase /> */}
             {/* <TipsCalculator /> */}
             <Gallery />
-            <OldLightGallery />
+            {/* <OldLightGallery /> */}
             {/* <ObjectOrientedData /> */}
         </div>
     );

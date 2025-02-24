@@ -1,8 +1,8 @@
-// import { useEffect, useRef } from 'react';
-import LightGallery from 'lightgallery/react'; // Use the React wrapper
+import LightGallery from 'lightgallery/react';
 import 'lightgallery/scss/lightgallery.scss';
 import 'lightgallery/scss/lg-zoom.scss';
 import lgZoom from 'lightgallery/plugins/zoom';
+import '../styling/Gallery.scss';
 
 import UseFetch from './UseFetch';
 
@@ -22,6 +22,7 @@ export default function Gallery() {
 
     return (
         <div className="gallery-container">
+            <h1>New Gallery</h1>
             <LightGallery speed={500} plugins={[lgZoom]}>
                 {Array.isArray(photos) &&
                     photos.slice(0, 10).map((item) => (

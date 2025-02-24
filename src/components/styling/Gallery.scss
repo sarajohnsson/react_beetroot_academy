@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// #root {
+//     background-color: #444;
+// }
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    margin-bottom: 40px;
+}
+
+.img-responsive {
+    max-width: 150px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: none;
+    }
+}

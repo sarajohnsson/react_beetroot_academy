@@ -1,8 +1,9 @@
 import React from 'react';
-import LightGallery from 'lightgallery/react'; // Use the React wrapper
+import LightGallery from 'lightgallery/react';
 import 'lightgallery/scss/lightgallery.scss';
 import 'lightgallery/scss/lg-zoom.scss';
 import lgZoom from 'lightgallery/plugins/zoom';
+import '../styling/Gallery.scss';
 
 const KEY = 'CMOi4Ecb-EvxU2Rxza6dr4uubqJTyRcKfjJlPvoQp7Y';
 const URL = 'https://api.unsplash.com/photos';
@@ -40,6 +41,7 @@ export default class OldLightGallery extends React.Component {
 
         return (
             <div className="gallery-container">
+                <h1>Old Gallery</h1>
                 <LightGallery speed={500} plugins={[lgZoom]}>
                     {Array.isArray(data) &&
                         data.slice(0, 10).map((item) => (
