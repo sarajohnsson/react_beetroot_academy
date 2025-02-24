@@ -3,9 +3,9 @@ import './App.scss';
 // import MovieDatabase from './components/Lesson/MovieDatabase';
 // import Home from './components/Home';
 // import TipsCalculator from './components/TipsCalcHomework/TipsCalculator';
-// import Gallery from './components/ClassCompHomework/Gallery';
-// import OldLightGallery from './components/ClassCompHomework/OldLightGallery';
-import ObjectOrientedData from './components/PetProjects/ObjectOrientedData';
+import Gallery from './components/ClassCompHomework/Gallery';
+import OldLightGallery from './components/ClassCompHomework/OldLightGallery';
+// import ObjectOrientedData from './components/PetProjects/ObjectOrientedData';
 
 function App() {
     return (
@@ -15,9 +15,9 @@ function App() {
         <div className="App">
             {/* <MovieDatabase /> */}
             {/* <TipsCalculator /> */}
-            {/* <Gallery /> */}
-            {/* <OldLightGallery /> */}
-            <ObjectOrientedData />
+            <Gallery />
+            <OldLightGallery />
+            {/* <ObjectOrientedData /> */}
         </div>
     );
 }
