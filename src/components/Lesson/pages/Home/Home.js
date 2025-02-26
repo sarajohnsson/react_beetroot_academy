@@ -1,4 +1,4 @@
-import Button from './Button';
+import Button from '../../components/Lesson/Button';
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -40,3 +40,6 @@ export default function Home() {
 
 // For performance have all the markup in the return section
 // For readability and easy to maintain create separate functions for markups and when we want to display something or modify data, will take a little more on performance
+
+// Conditional rendering, allows us to render something based on a condition.
+// { movies.length && <Grid movies={movies}/>}
