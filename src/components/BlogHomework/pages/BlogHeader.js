@@ -1,7 +1,12 @@
+import { NavLink } from 'react-router-dom';
+
 export default function BlogHeader({ setPage }) {
     return (
-        <ul>
-            <li>Item</li>
-        </ul>
+        <nav>
+            <ul>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/singleblogpage">Single</NavLink>
+            </ul>
+        </nav>
     );
 }

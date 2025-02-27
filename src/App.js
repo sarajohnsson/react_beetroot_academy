@@ -4,6 +4,7 @@ import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DefaultLayout from './components/BlogHomework/layouts/DefaultLayout';
 import BlogPage from './components/BlogHomework/pages/Home/BlogPage';
+import SingleBlogPage from './components/BlogHomework/pages/SingleBlog/SingleBlogPage';
 
 // import MovieDatabase from './components/Lesson/MovieDatabase';
 // import Home from './components/Home';
@@ -33,6 +34,10 @@ function App() {
             <Routes>
                 <Route path="/" element={<DefaultLayout />}>
                     <Route index element={<BlogPage />} />
+                    <Route
+                        path="/singleblogpage/:id"
+                        element={<SingleBlogPage />}
+                    />
                 </Route>
             </Routes>
             {/* <MovieDatabase /> */}

@@ -1,5 +1,6 @@
-import Button from '../../../TipsCalcHomework/Button';
+import { NavLink } from 'react-router-dom';
 import UseFetch from '../../../ClassCompHomework/UseFetch';
+import './BlogPage.scss';
 
 const URL = 'https://jsonplaceholder.typicode.com/posts';
 
@@ -23,8 +24,14 @@ export default function BlogPage() {
                     data.slice(0, 20).map((item) => (
                         <div className="blog-item" key={item.id}>
                             <h2 className="blog-title">{item.title}</h2>
-                            <p className="blog-text">{item.body}</p>
-                            <Button className="btn" title="See more" />
+                            <p className="blog-text">
+                                {item.body.substring(0, 40)}...
+                            </p>
+                            <NavLink
+                                to={`/singleblogpage/${item.id}`}
+                                className="btn">
+                                Read more
+                            </NavLink>
                         </div>
                     ))}
             </div>
