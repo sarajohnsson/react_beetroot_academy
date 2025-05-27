@@ -8,7 +8,7 @@ import SingleBlogPage from './components/BlogHomework/pages/SingleBlog/SingleBlo
 
 // import MovieDatabase from './components/Lesson/MovieDatabase';
 // import Home from './components/Home';
-// import TipsCalculator from './components/TipsCalcHomework/TipsCalculator';
+import TipsCalculator from './components/TipsCalcHomework/TipsCalculator';
 // import Gallery from './components/ClassCompHomework/Gallery';
 // import OldLightGallery from './components/ClassCompHomework/OldLightGallery';
 // import ObjectOrientedData from './components/PetProjects/ObjectOrientedData';
@@ -31,7 +31,7 @@ function App() {
         // Tags are the same except for class in JSX is className
         // If you have picture in local file you need to import each and everyone of them as you are not able to put them directly in the HTML like code
         <div className="App">
-            <Routes>
+            {/* <Routes>
                 <Route path="/" element={<DefaultLayout />}>
                     <Route index element={<BlogPage />} />
                     <Route
@@ -39,9 +39,9 @@ function App() {
                         element={<SingleBlogPage />}
                     />
                 </Route>
-            </Routes>
+            </Routes> */}
             {/* <MovieDatabase /> */}
-            {/* <TipsCalculator /> */}
+            <TipsCalculator />
             {/* <Gallery /> */}
             {/* <OldLightGallery /> */}
             {/* <ObjectOrientedData /> */}
